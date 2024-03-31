@@ -15,58 +15,45 @@
         <link rel="stylesheet" href="../CSS/BaseStyle.css" />
   </head>
   <body>
-    <header>
-      <img src="../images/icons/gamerboxicon.svg" alt="" id="joystick">
+      
+          
+<!--Menu de navegação-->
+    <nav class="navbar">
+
+      <div class="container-fluid">
+        <img src="../images/icons/gamerboxicon.svg" alt="" id="joystick">
       
       <div class="magic-grid" id="magic-grid"></div>
-
-
-      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark p=4">
-        <div class="bg-dark p-4">
-
-          <div class="d-flex flex-column align-items-start">
-            <a href="#" class="text-white">Inicio</a>
-            <a href="#" class="text-white">Jogos</a>
-            <a href="#" class="text-white">Reviews</a>
-            <a href="#" class="text-white">Usuários</a>
-            <a href="#" class="text-white">Meu perfil</a>
-          </div>
-
-        </div>
+     
+      <!--Início do botão de menu-->
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        
       </div>
-
-      <nav class="navbar navbar-dark ">
-        <div class="container-fluid">
+     
+      <div class="collapse navbar-collapse bg-body-tertiary" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Otro link</a>
+          </li>
           
-          <button class="navbar-toggler d-flex d-lg-flex flex column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-        </div>
-      </nav>
-
-      
-
-        <!-- <div class="dropdown">
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-          
-          <ul class="dropdown-menu">
-            <li><button class="dropdown-item" type="button">Inicio</button></li>
-            <li><button class="dropdown-item" type="button">Jogos</button></li>
-            <li><button class="dropdown-item" type="button">Reviews</button></li>
-            <li><button class="dropdown-item" type="button">Usuários</button></li>
-            <li><button class="dropdown-item" type="button">Meu perfil</button></li>
-          </ul>
-          
-        </div> -->
-
-    </header>
+      </div>
+    </nav>
     
+    
+    <!--Fim do botão de menu-->
+<!--Fim do Menu de navegação-->
+
+
     <script src="../JAVASCRIPT/BaseScript.js"></script>
     <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

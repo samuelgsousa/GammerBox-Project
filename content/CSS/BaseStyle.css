@@ -27,12 +27,55 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
+    height: 10vh;
     margin-top: 1vh;
     width: 90%;
     overflow: hidden;
   }
   
+  @media(max-width:1105px){
+    .magic-grid{
+      width: 85%;
+    }
+    @media(max-width:745px){
+      .magic-grid{
+        width: 80%;
+      }
+      @media(max-width:564px){
+        .magic-grid{
+          width: 75%;
+        }
+      }
+        @media(max-width:456px){
+          .magic-grid{
+            width: 70%;
+          }
+        }
+          @media(max-width:384px){
+            .magic-grid{
+              width: 65%;
+            }
+          }
+            @media(max-width:333px){
+              .magic-grid{
+                width: 60%;
+              }
+            }
+              @media(max-width:294px){
+                .magic-grid{
+                  width: 55%;
+                }
+              }
+                @media(max-width:280px){
+                  .magic-grid{
+                    width: 0%;
+                  }
+                }
+                
+        
+    }
+  } 
+
   .square {
     background-color: #1d1d1d;
     box-shadow: 0 0 2px #000;
@@ -46,6 +89,8 @@
     transition-duration: 0s;
   }
 
+/*Botão de menu*/
+
  .dropdown-menu button{
   text-align: right;
  }
@@ -55,7 +100,6 @@
  }
 
  .navbar-toggler{
-  margin-top: 3%;
   width: 3rem;
   height: 20px;
   position: relative;
@@ -104,8 +148,7 @@
 
  .navbar-toggler .bottom-bar{
   margin-top: 0px;
-  transform
-  : rotate(-135deg)
+  transform: rotate(-135deg)
  }
 
  /* estado quando a navbar colapsar */
@@ -124,3 +167,23 @@
   margin-top:30%;
   transform: rotate(0deg);
  }
+
+#navbarToggleExternalContent{
+  /* margin-top: 15.5%; */
+  width: 100%;
+  background-color: transparent;
+  text-align: right;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+}
+
+.navbar-collapse{
+}
+
+ /*Fim botão de menu*/
