@@ -1,21 +1,22 @@
+@charset "UTF-8";
+
+:root{
+  --Hover: #585858;
+  --HoverClick: #7c7c7c;
+  --Button: white;
+  --BackGround: #111;
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   body {
-    background-color: #111;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-  }
-  header{
-    display: flex;
-    justify-content: space-around;
-    height: 8%;
-    align-items: center;
+    background-color: var(--BackGround);
+    min-height: 100%;
+    max-height: none;
   }
 
   #joystick{
@@ -27,7 +28,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 10vh;
+    height: 8vh;
     margin-top: 1vh;
     width: 90%;
     overflow: hidden;
@@ -122,7 +123,7 @@
   position: absolute;
   height: 6px;
   width: 100%;
-  background: white;
+  background: var(--Button);
   border-radius: 5px;
   opacity: 1;
   left: 0;
@@ -176,14 +177,40 @@
 
 }
 
-a{
-  text-decoration: none;
-}
-
-.navbar{
-}
-
 .navbar-collapse{
+  margin-top: 0.5%;
 }
 
+.navbar-collapse a{
+  text-decoration: none;
+  text-align: right;
+  margin-right: 2%;
+}
+
+#navbarSupportedContent li:hover{
+  transition: 0.3s ease-in-out;
+  background-color: var(--Hover);
+}
+
+#navbarSupportedContent li:active{
+  transition: none;
+  background-color: var(--HoverClick);
+}
  /*Fim botão de menu*/
+
+ header{
+  background-color: var(--BackGround);
+  width: 100%;
+  display: inline;
+  margin-top: 0;
+ }
+
+ .navbar{
+  padding-top: 0;
+ }
+
+ /* Footer */
+
+ footer{
+  height: 20px;
+ }

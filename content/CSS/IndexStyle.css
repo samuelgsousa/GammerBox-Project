@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root{
+    --MainButtonColor: rgb(145, 56, 187);
+    --ActiveMButtonColor: rgb(172, 85, 212);
+}
+
+#cover{
+    background-image: url(../images/index-games/Cover/cv-Elden-ring.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#createAccount{
+    margin-top: 1%;
+    border-radius: 15px;
+    width: clamp(10rem, 10rem + 25vw ,50rem);
+    height: clamp(3rem, 2rem + 2vw ,5rem);
+    background-color: var(--MainButtonColor);
+    border-color: var(--MainButtonColor);
+}
+
+#createAccount:active{
+    background-color: var(--ActiveMButtonColor);
+    border-color: var(--ActiveMButtonColor);
+}
+
+#week-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vw;
+    padding: 0 3%;
+    gap:5 4%;
+}
+
+.week-game{
+    border-radius: 10px;
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+}
+
+.week-game img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* .filter{
+    z-index: 100; 
+    min-width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.274);
+} */
