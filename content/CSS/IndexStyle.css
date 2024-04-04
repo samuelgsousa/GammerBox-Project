@@ -3,10 +3,10 @@
 :root{
     --MainButtonColor: rgb(145, 56, 187);
     --ActiveMButtonColor: rgb(172, 85, 212);
+    --Filter: rgba(1, 39, 145, 0.548);
 }
 
 #cover{
-    background-image: url(../images/index-games/Cover/cv-Elden-ring.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +19,8 @@
     justify-content: center;
     flex-direction: column;
 }
+
+/* background-image: url(../images/index-games/Cover/cv-Elden-ring.svg); */
 
 #createAccount{
     margin-top: 1%;
@@ -50,6 +52,7 @@
     cursor: pointer;
     overflow: hidden;
     display: flex;
+    position: relative;
 }
 
 .week-game img{
@@ -59,9 +62,76 @@
     border-radius: 10px;
 }
 
-/* .filter{
-    z-index: 100; 
-    min-width: 100%;
+.icon{
+    max-width: clamp(16px,4px + 4vw,64px);
+    max-height: clamp(16px,4px + 4vw,64px);
+    visibility: hidden;
+    text-align: center ;
+}
+
+.rate{
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+     visibility: hidden; 
+    text-align: center;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.stars img{
+    max-height: clamp(16px,2px + 2vw,32px);
+    max-width: clamp(16px,2px + 2vw,32px);
+    filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(3207%) hue-rotate(78deg) brightness(98%) contrast(114%);
+}
+
+.filter{
+    position: absolute;
+    width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.274);
-} */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter:hover{
+    transition: 0.1s;
+    background-color: var(--Filter);
+}
+
+ .filter:hover + img{
+    transition: 0.1s;
+    filter: blur(1.3px);
+}
+
+.filter:hover .icon, .filter:hover .rate{
+    transition: 0.1s;
+    visibility: visible;
+}
+
+@media(max-width: 430px){
+    #week-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+        width: 100%;
+        justify-items: center;
+        grid-gap: 40px;
+    }
+
+    .week-game{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+

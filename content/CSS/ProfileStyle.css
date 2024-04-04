@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+:root{
+    --stampColor: rgb(154, 69, 250);
+}
+
+/*capa e perfil*/
+#cover{
+    background-image: url("../images/profile/General/wp-mortal-kombat.svg");
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 600px){
+    #cover{
+        align-items: last baseline;
+        justify-content: center;
+        padding-top: 10%;
+    }
+}
+
+#avatar{
+    height: 25%;
+    width: auto;
+    margin-left: 5%;
+    margin-bottom: 12%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+}
+
+#Profile-picture{
+    border-radius: 50%;
+    width: clamp(86px,12px + 12vw,128px); /*128px*/
+    height: clamp(86px,12px + 12vw,128px);
+    object-fit: cover;
+    grid-column: 1;
+}
+
+#nickname{
+    font-size: clamp(18px,2px + 2vw,26px);
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#follow{
+    max-width: clamp(24px,2px + 2vw,32px);
+    max-height: clamp(24px,2px + 2vw,32px);
+    filter: brightness(0) saturate(100%) invert(85%) sepia(28%) saturate(3207%) hue-rotate(78deg) brightness(98%) contrast(114%);
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+#follow:active{
+    filter: brightness(0) saturate(0%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0) brightness(150%) contrast(200%);
+}
+
+#stamp{
+    width: 70px;
+    height: 25px;
+    background-color: var(--stampColor);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 80%;
+    font-weight: 600;
+    color: white;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 50px;
+    cursor: unset;
+}
+
+/*/Capa e perfil*/
+
+/*Geral*/
+
+p{
+    text-align: justify;
+}
+
+/*/Geral*/
+
+/*Tabs*/
+
+#ScoreCraftTab{
+     box-shadow: 0px -6px 30px 40px; 
+}
+
+.tab-pane{
+    padding: 15px;
+}
+
+.nav-tabs{
+    flex-wrap: nowrap;
+}
+
+.nav-link{
+    color: white;
+}
+
+.active{
+    color: rgb(8, 255, 111) !important;
+}
+
+.nav-item button{
+  font-size: clamp(0.7rem, 0.2rem + 2vw ,1.1rem);
+}
+
+.nav-item button:hover{
+    color: var(--stampColor);
+}
+
+/*/Tabs*/
+
+/*Jogos Favoritos*/
+
+#game-tab-pane h1{
+    border-style: solid;
+    border-color: white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 20px;
+}
+
+#favorite-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vw;
+    padding: 0 3%;
+    gap:5 4%;
+}
+
+.favorite-game{
+    border-radius: 10px;
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.favorite-game img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px){
+    #favorite-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+        width: 100%;
+        justify-items: center;
+        grid-gap: 40px;
+    }
+
+    .favorite-game{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+/*/Jogos Favoritos/*/
+
+/*Reviews*/
+
+.game-review{
+    min-height: 21rem;
+    padding: 1%;
+    margin-bottom: 10px;
+    word-break: normal;
+}
+
+.img-game-review{
+    border-radius: 5px;
+    height: clamp(70px,30px + 30vw,300px); 
+    width: clamp(100px,25px + 20vw,200px); 
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    margin-right: clamp(10px,10px + 1vw,30px);
+}
+
+.game-review h1{
+    font-size: clamp(1.2rem,1rem + 2vw,2rem);
+    margin-bottom: 0px;
+}
+
+
+.rating{
+    font-size: 1.5rem;
+    margin-right: 1%;
+}
+
+@media(max-width: 350px){ .date-rate{ display: inline-block;}}
+
+.game-review p{
+    font-size: 1rem;
+    margin-top: 1%;
+
+}
+/*/Reviews*/

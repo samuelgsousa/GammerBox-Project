@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Meu Perfil</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../CSS/BaseStyle.css" />
+        <link rel="stylesheet" href="../CSS/ProfileStyle.css">
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </head>
+
+    <body class="bg-dark">
+       <main>
+        <div id="cover">
+            
+            <div id="avatar">
+                <img src="../images/profile/General/profile-picture.jpg" alt="" id="Profile-picture">
+
+                <span class="text-light fw-semibold text-expand-lg" id="nickname">Narutinho 123 <img src="../images/profile/General/follow.png" alt="" id="follow"></span>
+
+                <button type="button" id="stamp">Streamer</button>
+            </div>
+            
+        </div>
+<!--Guias de Navegação-->
+        <ul class="nav nav-underline nav-fill justify-content-center " id="ScoreCraftTab" role="tablist">
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active " id="game-tab" data-bs-toggle="tab" data-bs-target="#game-tab-pane" type="button" role="tab" aria-controls="game-tab-pane" aria-selected="true">jogos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">reviews</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="lives-tab" data-bs-toggle="tab" data-bs-target="#lives-tab-pane" type="button" role="tab" aria-controls="lives-tab-pane" aria-selected="false">lives</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lives-tab" data-bs-toggle="tab" data-bs-target="#statistics-tab-pane" type="button" role="tab" aria-controls="lives-tab-pane" aria-selected="false">estatísticas</button>
+              </li>
+              
+          </ul>
+<!--/Guias de Navegação-->
+
+<!--Conteúdo das Guias-->
+          <div class="tab-content" id="myTabContent">
+
+        <!--Jogos-->
+            <div class="tab-pane fade show active" id="game-tab-pane" role="tabpanel" aria-labelledby="game-tab" tabindex="0"> <!--Show active para deixar a guia aberta-->
+                <h1 class="text-light">Bio</h1>
+                    <p class="text-light fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea aspernatur, quia nostrum nisi, laudantium ad laboriosam deleniti tenetur fugiat aliquam mollitia cumque similique, hic voluptate nulla. Ducimus, consectetur quaerat?</p>
+
+                <h1 class="text-light">Favoritos</h1>
+
+                <div id="favorite-list">
+                    <div class="favorite-game">
+                        <img src="../images/profile/Games/fg-castlevania.svg" alt="..." >
+                                    </div>
+                    <div class="favorite-game">
+                        <img src="../images/profile/Games/fg-it-takes-two.svg" alt="...">
+                                    </div>
+                    <div class="favorite-game">
+                        <img src="../images/profile/Games/fg-marvel-vs-capcom.svg" alt="...">
+                                    </div>
+                    <div class="favorite-game">
+                        <img src="../images/profile/Games/fg-naruto-un.svg" alt="...">
+                                    </div>
+                    </div>
+
+            </div>
+        <!--/Jogos -->
+
+        <!--Reviews-->
+            <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+
+            <div id="review-list">
+
+                <div class="game-review border-bottom border-secondary">
+                        <img src="../images/profile/Games/fg-castlevania.svg" alt="" class="img-game-review rounded float-start">
+    
+                        <h1 class="text-light">Castlevania</h1>
+                        <span class="text-success rating">★★★★★</span> <span class="text-light-emphasis date-rate">23 Sept 2019</span>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus?</p>
+                </div>
+
+                <div class="game-review border-bottom border-secondary">
+                    <img src="../images/profile/Games/fg-naruto-un.svg" alt="" class="img-game-review rounded float-start">
+
+                    <h1 class="text-light">Naruto Ultimate Ninja</h1>
+                    <span class="text-success rating">★★★★★</span> <span class="text-light-emphasis date-rate">15 June 2015</span>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quibusdam perspiciatis nobis dolorum, omnis reprehenderit repudiandae sit corporis labore fuga, eaque illo similique! Nihil dolor repudiandae mollitia similique dolorum esse?lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quibusdam perspiciatis nobis dolorum, omnis reprehenderit repudiandae sit corporis labore fuga, eaque illo similique! Nihil dolor repudiandae mollitia similique dolorum esse?loremLorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quibusdam perspiciatis nobis dolorum, omnis reprehenderit repudiandae sit corporis labore fuga, eaque illo similique! Nihil dolor repudiandae mollitia similique dolorum esse?lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quibusdam perspiciatis nobis dolorum, omnis reprehenderit repudiandae sit corporis labore fuga, eaque illo similique! Nihil dolor repudiandae mollitia similique dolorum esse?lorem</p>
+            </div>
+
+            <div class="game-review border-bottom border-secondary">
+                <img src="../images/profile/Games/fg-marvel-vs-capcom.jpg" alt="" class="img-game-review rounded float-start">
+
+                <h1 class="text-light">Marvel vs Capcom</h1>
+                <span class="text-success rating">★★★★★</span> <span class="text-light-emphasis date-rate">3 Fev 2011</span>
+                <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus?</p>
+            </div>
+
+            <div class="game-review border-bottom border-secondary">
+                <img src="../images/profile/Games/fg-it-takes-two.svg" alt="" class="img-game-review rounded float-start">
+
+                <h1 class="text-light">It Takes Two</h1>
+                <span class="text-success rating">★★★★★</span> <span class="text-light-emphasis date-rate">30 Mar 2024</span>
+                <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod. Mollitia dicta nemo quos enim asperiores natus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure culpa, rem maiores, nesciunt eaque, veritatis cumque officiis facere voluptatibus quaerat quidem dicta dolorem aperiam corporis fugiat earum modi ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At est, corrupti animi provident, perspiciatis adipisci neque delectus itaque quo sapiente omnis mollitia quod.</p>
+        </div>
+
+            </div>
+
+            </div>
+        <!--/Reviews-->
+
+        <!--Lives-->
+            <div class="tab-pane fade" id="lives-tab-pane" role="tabpanel" aria-labelledby="lives-tab" tabindex="0">lives</div>
+        <!--/Lives-->
+
+            <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">estatísticas</div>
+
+          </div>
+<!--/Conteúdo das Guias -->
+       </main>
+       
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        
+        
+    </body>
+    <script src="../JAVASCRIPT/BaseScript.js"></script>
+</html>
