@@ -32,7 +32,7 @@
     column-gap: 15px;
 }
 
-#Profile-picture{
+.Profile-picture{
     border-radius: 50%;
     width: clamp(86px,12px + 12vw,128px); /*128px*/
     height: clamp(86px,12px + 12vw,128px);
@@ -58,7 +58,7 @@
     filter: brightness(0) saturate(0%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0) brightness(150%) contrast(200%);
 }
 
-#stamp{
+.stamp{
     width: 70px;
     height: 25px;
     background-color: var(--stampColor);
@@ -211,3 +211,161 @@ p{
 
 }
 /*/Reviews*/
+
+/*Lives*/
+
+#lives-tab-pane h1{
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+swiper-container{
+    height: 35vh;
+  }
+
+  swiper-slide{
+    max-width: 40vh;
+    height: 100%;
+    position: relative;
+  }
+
+  swiper-slide iframe{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+  } 
+
+  .live-data{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  /*/Lives*/
+
+/*Estatísticas*/
+
+#statistics-tab-pane{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.graphics{
+    display: flex;
+    gap: 15%;
+    height: 60vh;
+   
+}
+
+#avatar-data{
+    height: 60vh;
+    width: 90vh;
+    margin-bottom: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar-data .Profile-picture{
+    width: 40vh;
+    height: 40vh;
+}
+
+#avatar-data .stamp{
+margin-top: 0px;}
+
+#avatar-data #nickname{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dados{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dados span{
+    font-size: 2rem;
+    color: white;
+}
+
+.chart-container{
+    width: 200px;
+    height: 100px;
+    align-self: baseline;
+  }
+
+.avaliacoes{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: last baseline;
+    gap: 25px;
+}
+
+.seguindo{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 99%;
+    border-style: solid;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.following-profiles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+}
+
+.following-p-photo img{
+    border-radius: 50%;
+    width: clamp(86px,12px + 12vw,128px); /*128px*/
+    height: clamp(86px,12px + 12vw,128px);
+    object-fit: cover;
+
+}
+
+  /*/Estatísticas*/
+
+  @media(max-width:850px){
+    #statistics-tab-pane{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 120vh;
+
+    }
+    .seguindo{
+        text-align: center;
+    }
+
+    #avatar-data{
+        margin-bottom: 0px;
+    }
+
+    .graphics{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .dados{
+      width: auto;
+      margin-left: 15%;
+    }
+    .avaliacoes{
+       justify-content: center;
+    }
+}
+
+

@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="../CSS/BaseStyle.css" />
         <link rel="stylesheet" href="../CSS/ProfileStyle.css">
         
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     </head>
@@ -28,11 +30,11 @@
         <div id="cover">
             
             <div id="avatar">
-                <img src="../images/profile/General/profile-picture.jpg" alt="" id="Profile-picture">
+                <img src="../images/profile/General/profile-picture.jpg" alt="" class="Profile-picture">
 
                 <span class="text-light fw-semibold text-expand-lg" id="nickname">Narutinho 123 <img src="../images/profile/General/follow.png" alt="" id="follow"></span>
 
-                <button type="button" id="stamp">Streamer</button>
+                <button type="button" class="stamp">Streamer</button>
             </div>
             
         </div>
@@ -56,10 +58,10 @@
 <!--/Guias de Navegação-->
 
 <!--Conteúdo das Guias-->
-          <div class="tab-content" id="myTabContent">
+          <div class="tab-content" id="myTabContent" >
 
         <!--Jogos-->
-            <div class="tab-pane fade show active" id="game-tab-pane" role="tabpanel" aria-labelledby="game-tab" tabindex="0"> <!--Show active para deixar a guia aberta-->
+            <div class="tab-pane fade show active" id="game-tab-pane" role="tabpanel" aria-labelledby="game-tab" tabindex="0"> 
                 <h1 class="text-light">Bio</h1>
                     <p class="text-light fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea aspernatur, quia nostrum nisi, laudantium ad laboriosam deleniti tenetur fugiat aliquam mollitia cumque similique, hic voluptate nulla. Ducimus, consectetur quaerat?</p>
 
@@ -126,10 +128,179 @@
         <!--/Reviews-->
 
         <!--Lives-->
-            <div class="tab-pane fade" id="lives-tab-pane" role="tabpanel" aria-labelledby="lives-tab" tabindex="0">lives</div>
+        <div class="tab-pane fade" id="lives-tab-pane" role="tabpanel" aria-labelledby="lives-tab" tabindex="0"> <!--Show active para deixar a guia aberta-->
+                
+        <h1>Recentes</h1>
+
+        <swiper-container class="mySwiper" slides-per-view="auto" space-between="50" free-mode="true">
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KKBYsSiJVk0?si=4Ry3yfrhLv3VzDpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <span class="live-data">07/04/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5rlZ9p6z270?si=2eHMjQTsv5i5Z6u1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="if1"></iframe>
+                
+                <span class="live-data">18/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sqn_LOa7Y8Y?si=DDTEk7JZVjswOl_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">15/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AttTbHVdCso?si=hphoJOVJJbDhyGyr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">11/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x4Qh3T-2LKw?si=_Ed1oE1udMvBpdTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">02/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PAt5wjnH4B4?si=pHStOyDN6lTfEDNS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">28/01/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eikEOz7jVOo?si=YSy7mokipv1Z7Lcj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">13/01/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oH-sgJ0vWek?si=NH9umVS2XHCeaJWh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">07/01/2024</span>
+            </swiper-slide>
+
+          </swiper-container>
+           
+          <h1>Castlevania</h1>
+
+          <swiper-container class="mySwiper" slides-per-view="auto" space-between="50" free-mode="true">
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h_8F7xd9uhs?si=nwjMXDD6xeup5hmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <span class="live-data">07/04/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r1IrIsSWzxI?si=MKHhvYjJSAefPKm3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <span class="live-data">18/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BqsBAQr-9hA?si=_eM7VRcCeYPBoBuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">15/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kFPUUolKatA?si=_T0LaOPu7tOFNXX6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">11/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MMbn2AjIyu0?si=1OxNDTPCuqzhC76w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">02/02/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjbNo8LdZzA?si=kkI_3z44OwsLG9Dp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">28/01/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eikEOz7jVOo?si=YSy7mokipv1Z7Lcj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">13/01/2024</span>
+            </swiper-slide>
+
+            <swiper-slide>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jVTehryvOa0?si=Q-0I2eBe5GTUNT0h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <span class="live-data">07/01/2024</span>
+            </swiper-slide>
+
+          </swiper-container>
+
+        </div>
+
         <!--/Lives-->
 
-            <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">estatísticas</div>
+        <!--Estatísticas-->
+            <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">
+<div class="graphics">
+    
+                    <div id="avatar-data">
+                        <img src="../images/profile/General/profile-picture.jpg" alt="" class="Profile-picture">
+    
+                        <span class="text-light fw-semibold text-expand-lg" id="nickname">Narutinho 123</span>
+    
+                        <button type="button" class="stamp">Streamer</button>
+                    </div>
+    
+                <div class="dados">
+                    <span>Seguidores: 7.5mi</span>
+                    <span>Horas jogadas 4556h</span>
+                    <span>Generos Favoritos</span>
+    
+                    <div class="avaliacoes">
+                        <span>Avaliações:</span>
+    
+                            <div class="chart-container">
+                            <canvas id="myChart"></canvas>
+                            </div>
+                    </div>
+
+                </div>
+                
+          
+            </div>
+            
+<div class="seguindo">
+    <h1 class="text-light">Seguindo</h1>
+ </div>   
+
+<!--Quem o perfil segue-->
+
+<div class="following-profiles">
+
+    <div class="following-p-photo">
+        <img src="https://64.media.tumblr.com/38711aa1d8f7a61472a18fa7194a1335/2109e0d8d2f4e647-fc/s400x600/08f03170fd3a281a5dabc0947b2697b43d812f1b.png" alt="">
+    </div>
+
+    <div class="following-p-photo">
+        <img src="https://64.media.tumblr.com/38711aa1d8f7a61472a18fa7194a1335/2109e0d8d2f4e647-fc/s400x600/08f03170fd3a281a5dabc0947b2697b43d812f1b.png" alt="">
+    </div>
+
+    <div class="following-p-photo">
+        <img src="https://64.media.tumblr.com/38711aa1d8f7a61472a18fa7194a1335/2109e0d8d2f4e647-fc/s400x600/08f03170fd3a281a5dabc0947b2697b43d812f1b.png" alt="">
+    </div>
+
+    <div class="following-p-photo">
+        <img src="https://64.media.tumblr.com/38711aa1d8f7a61472a18fa7194a1335/2109e0d8d2f4e647-fc/s400x600/08f03170fd3a281a5dabc0947b2697b43d812f1b.png" alt="">
+    </div>
+
+</div>
+                
+<!--/Quem o perfil segue-->
+
+</div>
+            </div>
+        <!--/Estatísticas-->
 
           </div>
 <!--/Conteúdo das Guias -->
@@ -149,5 +320,10 @@
         
         
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--Gráficos CDN-->
     <script src="../JAVASCRIPT/BaseScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JAVASCRIPT/ProfileScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
 </html>
