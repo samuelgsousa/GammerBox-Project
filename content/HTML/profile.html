@@ -30,9 +30,9 @@
         <div id="cover">
             
             <div id="avatar">
-                <img src="../images/profile/General/profile-picture.jpg" alt="" class="Profile-picture">
-
-                <span class="text-light fw-semibold text-expand-lg" id="nickname">Narutinho 123 <img src="../images/profile/General/follow.png" alt="" id="follow"></span>
+                <img src="" alt="" class="Profile-picture">
+                <!-- ../images/profile/General/profile-picture.jpg -->
+                <span class="text-light fw-semibold text-expand-lg" id="nickname"><img src="../images/profile/General/follow.png" alt="" id="follow"></span>
 
                 <button type="button" class="stamp">Streamer</button>
             </div>
@@ -61,7 +61,7 @@
           <div class="tab-content" id="myTabContent" >
 
         <!--Jogos-->
-            <div class="tab-pane fade show active" id="game-tab-pane" role="tabpanel" aria-labelledby="game-tab" tabindex="0"> 
+            <div class="tab-pane fade " id="game-tab-pane" role="tabpanel" aria-labelledby="game-tab" tabindex="0"> 
                 <h1 class="text-light">Bio</h1>
                     <p class="text-light fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea aspernatur, quia nostrum nisi, laudantium ad laboriosam deleniti tenetur fugiat aliquam mollitia cumque similique, hic voluptate nulla. Ducimus, consectetur quaerat?</p>
 
@@ -128,11 +128,11 @@
         <!--/Reviews-->
 
         <!--Lives-->
-        <div class="tab-pane fade" id="lives-tab-pane" role="tabpanel" aria-labelledby="lives-tab" tabindex="0"> <!--Show active para deixar a guia aberta-->
+        <div class="tab-pane fade" id="lives-tab-pane" role="tabpanel" aria-labelledby="lives-tab" tabindex="0">
                 
         <h1>Recentes</h1>
 
-        <swiper-container class="mySwiper" slides-per-view="auto" space-between="50" free-mode="true">
+        <!-- <swiper-container class="mySwiper" slides-per-view="auto" space-between="50" free-mode="true">
 
             <swiper-slide>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KKBYsSiJVk0?si=4Ry3yfrhLv3VzDpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -234,14 +234,14 @@
                 <span class="live-data">07/01/2024</span>
             </swiper-slide>
 
-          </swiper-container>
+          </swiper-container> -->
 
         </div>
 
         <!--/Lives-->
 
         <!--Estatísticas-->
-            <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">
 <div class="graphics">
     
                     <div id="avatar-data">
@@ -253,12 +253,12 @@
                     </div>
     
                 <div class="dados">
-                    <span>Seguidores: 7.5mi</span>
-                    <span>Horas jogadas 4556h</span>
-                    <span>Generos Favoritos</span>
+                    <span id="seguidores">Seguidores: </span>
+                    <span id="horasJogadas">Horas jogadas: </span>
+                    <span id="generosFavoritos">Generos Favoritos: </span>
     
                     <div class="avaliacoes">
-                        <span>Avaliações:</span>
+                        <span id="aval">Avaliações:</span>
     
                             <div class="chart-container">
                             <canvas id="myChart"></canvas>

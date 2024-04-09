@@ -71,6 +71,7 @@
     grid-row: 1;
     margin-top: 50px;
     cursor: unset;
+    display: none;
 }
 
 /*/Capa e perfil*/

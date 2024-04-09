@@ -1,0 +1,6 @@
+Tecnologias usadas:
+Swiper Js
+chart js
+Bootstrap
+Javascript
+Jquery

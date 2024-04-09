@@ -1,0 +1,18 @@
+{
+    "usuario1":{
+        "nome": "Narutinho 123",
+        "foto_perfil": "../images/profile/General/profile-picture-naruto.jpg",
+        "seguidores": 7500,
+        "horas_jogadas": 4556,
+        "generos_favoritos": ["Terror", "Ação", "Aventura"],
+        "avaliacoes":{
+            "star1": 12,
+            "star2": 19,
+            "star3": 3,
+            "star4": 5,
+            "star5": 2
+        },
+        "streamer": true,
+        "seguindo": ["Ellie 1", "Ellie 2", "Ellie 3"]
+    }
+}
