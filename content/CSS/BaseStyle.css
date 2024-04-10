@@ -7,6 +7,10 @@
   --BackGround: #111;
 }
 
+.disabled{
+  color:#7c7c7c !important;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

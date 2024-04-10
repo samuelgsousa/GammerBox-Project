@@ -7,3 +7,5 @@ const foto = img[i]
 $('#cover').css("background-image", `url(../images/index-games/Cover/${foto})`)
 
 })
+
+//depois mudar para fetch

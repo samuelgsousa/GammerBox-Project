@@ -1,0 +1,47 @@
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 1%;
+    width: 60%;
+}
+
+#users{
+    display: flex;
+    width: 100%;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 50px;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card img{
+    height: 18rem;
+    object-fit: cover;
+}
+
+@media(max-width: 620px){
+    #users{
+        flex-flow: column;
+    }
+}
+
+.card:hover{
+    transition: ease-in-out 0.4s;
+    transform: translateY(-50px);
+}
