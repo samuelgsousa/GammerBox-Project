@@ -8,6 +8,8 @@ $(document).ready(() => {
         'cv-tlou.svg'
     ];
 
+    async function inserirCapa(){
+
     // Carregar todas as imagens usando Fetch
     Promise.all(urlImagens.map(url => fetch(`../images/index-games/Cover/${url}`)))
         .then(responses => Promise.all(responses.map(res => res.blob())))
@@ -19,5 +21,7 @@ $(document).ready(() => {
         })
         .catch(error => {
             console.error('Erro ao carregar as imagens:', error);
-        });
-});
+        }); }
+
+        inserirCapa()
+})
