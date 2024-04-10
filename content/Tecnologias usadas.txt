@@ -4,3 +4,5 @@ chart js
 Bootstrap
 Javascript
 Jquery
+JSON
+Fetch
