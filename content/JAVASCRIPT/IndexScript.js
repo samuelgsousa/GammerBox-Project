@@ -25,3 +25,5 @@ $(document).ready(() => {
 
         inserirCapa()
 })
+
+//depos fazer um código onde as urls estão em json e o fetc pega apenas UMA aleatóriamente, e caso não consiga tente novamente algumas vezes, e se não der certo tentar outra imagem
