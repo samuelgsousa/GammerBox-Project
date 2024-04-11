@@ -135,7 +135,7 @@ options: {
 
 $(document).ready( async () => {
   $.ajax({
-    url: 'users.js',
+    url: '../javascript/users.js',
     dataType: 'script',
     success: () => {
         
