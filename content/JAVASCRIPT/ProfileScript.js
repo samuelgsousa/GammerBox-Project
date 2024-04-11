@@ -133,7 +133,7 @@ options: {
   let urlParams = new URLSearchParams(window.location.search)
   let index = urlParams.get('value')  //localiza o valor da url que é passado de acordo com qual perfil o usuário escolheu para olhar
 
-$(document).ready( () => {
+$(document).ready( async () => {
   fetch("../javascript/users.json") //localiza o arquivo onde constam todos os usuários
   .then(response => response.json())
   .then(data => {
