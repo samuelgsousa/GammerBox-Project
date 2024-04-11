@@ -134,33 +134,66 @@ options: {
   let index = urlParams.get('value')  //localiza o valor da url que é passado de acordo com qual perfil o usuário escolheu para olhar
 
 $(document).ready( async () => {
-  fetch("../javascript/users.json") //localiza o arquivo onde constam todos os usuários
-  .then(response => response.json())
-  .then(data => {
-    $("img.Profile-picture").attr("src", data.usuario[index].foto_perfil)
-    $("span#nickname").text(data.usuario[index].nome) 
-    
-    $("div#cover").css("background-image", `url(${data.usuario[index].wallpaper})`)
+  $.ajax({
+    url: '../javascript/users.js',
+    dataType: 'script',
+    success: () => {
+        
+              $("img.Profile-picture").attr("src", users.usuario[index].foto_perfil)
+              $("span#nickname").text(users.usuario[index].nome) 
+              $("div#cover").css("background-image", `url(${users.usuario[index].wallpaper})`)
+              //Gerando foto de perfil, nickname e capa         
 
-    if(data.usuario[index].streamer == true) {
-      $("button.stamp").css("display", "block")
-      $('#lives-tab').parent("li").css("display", "flex")
-  }
-    $('p#bio').text(data.usuario[index].bio)
-    $("span#seguidores").text(`Seguidores: ${data.usuario[index].seguidores}`)
-    $("span#horasJogadas").text(`Horas jogadas: ${data.usuario[index].horas_jogadas}h`)
-    $("span#generosFavoritos").text(`Gêneros favoritos: ${data.usuario[index].generos_favoritos}`)
-    
-    gerarGrafico(data)
-    gerarReview(data)
-    gerarFavoritos(data)
-    
-    
-    console.log(data.usuario[index].avaliacoes)
-  })
 
-  .catch(error => console.error("Erro:", error))
+              if(users.usuario[index].streamer == true) {
+                  $("button.stamp").css("display", "block")
+                  $('#lives-tab').parent("li").css("display", "flex")
+               } 
+
+            $('p#bio').text(users.usuario[index].bio)
+            $("span#seguidores").text(`Seguidores: ${users.usuario[index].seguidores}`)
+            $("span#horasJogadas").text(`Horas jogadas: ${users.usuario[index].horas_jogadas}h`)
+            $("span#generosFavoritos").text(`Gêneros favoritos: ${users.usuario[index].generos_favoritos}`)
+              
+            gerarGrafico(users)
+            gerarReview(users)
+            gerarFavoritos(users)
+
+      },
+    error: function(xhr, status, error) {
+        console.error('Erro ao carregar o arquivo users.js:', error);
+    }
+});
+
 })
 
 
+// fetch("../javascript/users.json") //localiza o arquivo onde constam todos os usuários
+  
 
+// .catch(error => console.error("Erro:", error))
+
+
+// .then(response => response.json())
+//   .then(data => {
+//     $("img.Profile-picture").attr("src", data.usuario[index].foto_perfil)
+//     $("span#nickname").text(data.usuario[index].nome) 
+    
+//     $("div#cover").css("background-image", `url(${data.usuario[index].wallpaper})`)
+
+//     if(data.usuario[index].streamer == true) {
+//       $("button.stamp").css("display", "block")
+//       $('#lives-tab').parent("li").css("display", "flex")
+//   }
+//     $('p#bio').text(data.usuario[index].bio)
+//     $("span#seguidores").text(`Seguidores: ${data.usuario[index].seguidores}`)
+//     $("span#horasJogadas").text(`Horas jogadas: ${data.usuario[index].horas_jogadas}h`)
+//     $("span#generosFavoritos").text(`Gêneros favoritos: ${data.usuario[index].generos_favoritos}`)
+    
+//     gerarGrafico(data)
+//     gerarReview(data)
+//     gerarFavoritos(data)
+    
+    
+//     console.log(data.usuario[index].avaliacoes)
+//   })

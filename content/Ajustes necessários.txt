@@ -1,12 +1,11 @@
->Remover a aba lives para quem não é streamer
 
->>>adicionar os jogos favoritos, bio e reviews como banco de dados<<<
 
 >Adicionar os ícones em generos favoritos
+
 >Em usuários alterar a capa estrelada para que os cometas sigam uma direção só
->corrigir o pequeno gap que fica visível quando abre o menu
->Alterar botão de crie sua conta na página inicial
->Alterar texto acima do botão na página inicial
+
+
+
 
 > *TALVEZ criar banco de dados com os jogos em si e suas avaliações, favoritados etc
 
@@ -14,3 +13,20 @@ registro de alterações do código do céu estrelado:
 >alterado tamanho das estrelas
 >alterado tempo mínimo entre o surgimento dos cometas
 >alterado tamanho do rastro dos cometas
+
+*******FEITO********
+
+>Alterar texto acima do botão na página inicial
+>Alterar botão de crie sua conta na página inicial
+>corrigir o pequeno gap que fica visível quando abre o menu
+>Remover a aba lives para quem não é streamer
+
+>>>adicionar os jogos favoritos, bio e reviews como banco de dados<<<
+
+
+/*
+"gameName": "",
+                        "gamePicture": "",
+                        "PlayedData":"",
+                        "rating": ,
+                        "review_idv": ""

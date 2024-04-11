@@ -1,4 +1,4 @@
-{
+var users = {
     "usuario":[
         {
             "nome": "Narutinho 123",
