@@ -5,6 +5,13 @@
   --HoverClick: #7c7c7c;
   --Button: white;
   --BackGround: #111;
+  --MainColor: rgb(8, 255, 111);
+  --SecondaryColor: #7A4AFA;
+  --BasicTextColor: white;
+  --DataSpanLine: #7c7c7c;
+  --SquareBgColor: #1d1d1d;
+  --SquareShadowColor: #000;
+  --MainBackground: #212529;
 }
 
 .disabled{
@@ -82,8 +89,8 @@
   } 
 
   .square {
-    background-color: #1d1d1d;
-    box-shadow: 0 0 2px #000;
+    background-color: var(--SquareBgColor); 
+    box-shadow: 0 0 2px var(--SquareShadowColor); 
     height: 16px;
     width: 16px;
     margin: 2px;
@@ -101,7 +108,7 @@
  }
 
  .dropdown span{
-  color: white;
+  color: var(--BasicTextColor);
  }
 
  .navbar-toggler{
@@ -211,6 +218,14 @@
 
  .navbar{
   padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 15px;
+  border-bottom: 15px;
+ 
+ }
+
+ .magic-grid{
+  margin-bottom: 15px;
  }
 
  /* Footer */

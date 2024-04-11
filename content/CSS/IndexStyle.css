@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 :root{
-    --MainButtonColor: rgb(145, 56, 187);
+    --MainButtonColor: var(--SecondaryColor);
+    --MainButtonShadow: #3a0483;
     --ActiveMButtonColor: rgb(172, 85, 212);
     --Filter: rgba(1, 39, 145, 0.548);
 }
@@ -11,12 +12,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-attachment: fixed;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
 }
 
@@ -28,12 +29,20 @@
     width: clamp(10rem, 10rem + 25vw ,50rem);
     height: clamp(3rem, 2rem + 2vw ,5rem);
     background-color: var(--MainButtonColor);
-    border-color: var(--MainButtonColor);
+    border-color: var(--MainButtonShadow);
+    box-shadow: 2px 2px var(--MainButtonShadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #createAccount:active{
     background-color: var(--ActiveMButtonColor);
     border-color: var(--ActiveMButtonColor);
+}
+
+.modal-title{
+    box-shadow: 0px -80px 180px 250px #212529;
 }
 
 #week-list{
