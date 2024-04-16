@@ -46,6 +46,12 @@ fetch("header.html")
     setGrid()
 })
 
+//adicionando flaticon
+const flaticon = document.createElement('link')
+flaticon.setAttribute("rel", "shortcut icon")
+flaticon.setAttribute("href", "../images/icons/gamerboxicon.svg")
+flaticon.setAttribute("type", "image/x-icon")
+document.head.append(flaticon)
 
 
 //Adicionando Rodapé//
