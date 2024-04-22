@@ -30,7 +30,7 @@ canvas.addEventListener('mousedown', function(e) {
     mouseHeldDown = true;
     
     // Calculate angle once for all stars during the hold
-    holdAngle = Math.random() * Math.PI * 2;
+    holdAngle =  2;
 
     // Get mouse position
     const rect = canvas.getBoundingClientRect();
@@ -235,3 +235,4 @@ function spawnRandomMeteorShower() {
 drawStars();
 spawnRandomMeteorShower();
 spawnRandomShootingStar();
+
