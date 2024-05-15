@@ -56,4 +56,11 @@ document.head.append(flaticon)
 
 //Adicionando Rodapé//
 
-//??//
+const foot = document.createElement('footer')
+
+fetch("footer.html")
+.then(res => res.text())
+.then(res =>{
+    foot.innerHTML = res
+    body.append(foot)
+})

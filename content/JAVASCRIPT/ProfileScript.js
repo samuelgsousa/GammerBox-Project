@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.swiper', {
     freeMode: true,
     
@@ -168,32 +167,18 @@ $(document).ready( async () => {
 })
 
 
-// fetch("../javascript/users.json") //localiza o arquivo onde constam todos os usuários
+
+
+
+//  const reviewFooterAdjust = () =>{
+//    const reviewHeight = document.querySelector("div#review-list").clientHeight
+//    const mainHeight = document.querySelector("main").clientHeight
+
+
+//    }
+
+//    reviewFooterAdjust()
+
+
   
-
-// .catch(error => console.error("Erro:", error))
-
-
-// .then(response => response.json())
-//   .then(data => {
-//     $("img.Profile-picture").attr("src", data.usuario[index].foto_perfil)
-//     $("span#nickname").text(data.usuario[index].nome) 
-    
-//     $("div#cover").css("background-image", `url(${data.usuario[index].wallpaper})`)
-
-//     if(data.usuario[index].streamer == true) {
-//       $("button.stamp").css("display", "block")
-//       $('#lives-tab').parent("li").css("display", "flex")
-//   }
-//     $('p#bio').text(data.usuario[index].bio)
-//     $("span#seguidores").text(`Seguidores: ${data.usuario[index].seguidores}`)
-//     $("span#horasJogadas").text(`Horas jogadas: ${data.usuario[index].horas_jogadas}h`)
-//     $("span#generosFavoritos").text(`Gêneros favoritos: ${data.usuario[index].generos_favoritos}`)
-    
-//     gerarGrafico(data)
-//     gerarReview(data)
-//     gerarFavoritos(data)
-    
-    
-//     console.log(data.usuario[index].avaliacoes)
-//   })
+//    window.addEventListener('resize', reviewFooterAdjust)

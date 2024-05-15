@@ -92,10 +92,12 @@ p{
 
 .tab-pane{
     padding: 15px;
-    min-height: 100vh;
-    max-height: none;
-    box-sizing: content-box;
+    min-height: none;
+    max-height: 100vh;
+
 }
+
+
 
 .nav-tabs{
     flex-wrap: nowrap;
@@ -177,6 +179,23 @@ p{
 
 /*Reviews*/
 
+#reviews-tab-pane{
+    height: auto;
+}
+
+
+
+main{
+    overflow: hidden;
+    height: calc(auto + 12000px);
+    scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+    display: none; /* ocultar a barra de rolagem em navegadores WebKit */
+  }
+
+
 .game-review{
     min-height: 21rem;
     padding: 1%;
@@ -256,6 +275,11 @@ swiper-container{
     display: flex;
     flex-direction: column;
     align-self: start;
+    display: none;
+}
+
+ .active{
+    display: block !important;
 }
 
 .graphics{
@@ -349,7 +373,7 @@ margin-top: 0px;}
     #statistics-tab-pane{
         flex-direction: column;
         align-items: center;
-        height: 150vh;
+        max-height: none;
     }
     .seguindo{
         text-align: center;
